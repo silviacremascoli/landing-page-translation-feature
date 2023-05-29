@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Papyrus Author - Translation Feature</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="app.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="row nav-container">
+        <div class="d-flex">
+          <div class="p-2 flex-grow-1">
+            <img
+              src="/images/logo.png"
+              class="logo img-fluid"
+              alt="papyrus logo"
+            />
+          </div>
+          <div class="p-2">
+            <button>
+              <a
+                href="https://www.papyrusauthor.com/download/"
+                class="download-link"
+                target="_blank"
+                >DOWNLOAD NOW</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="mt-5">
+      <h1>Introducing the new translation feature</h1>
+      <h2>
+        Translate any word into another language and make your book more
+        international!
+      </h2>
+      <div data-aos="zoom-in">
+        <img
+          src="/images/Translation feature.png"
+          class="img-translation-feature img-fluid"
+          alt="translation feature"
+        />
+      </div>
+    </header>
+    <main class="text-center">
+      <h3>No language barriers anymore</h3>
+      <p class="mb-5">
+        Type a word or a sentence, select a target language and watch the magic
+        happening! We currently support translation from English into the
+        following languages: German, Italian, Spanish, French, Portuguese,
+        Danish, Swedish, Polish, Russian, Greek, Japanese, Icelandic.
+      </p>
+      <h4 class="mb-5">
+        See it in action: complete the text with any word that comes to your
+        mind!
+      </h4>
+      <div class="translation-feature mb-5" data-aos="zoom-in">
+        <div class="translation-form">
+          <input
+            type="search"
+            class="form-control"
+            id="search-input"
+            placeholder="Try: Darling!"
+          />
+          <select
+            class="form-select"
+            id="language-select"
+            aria-label="Default select example"
+          >
+            <option selected value="de">German</option>
+            <option value="it">Italian</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="pt">Portuguese</option>
+            <option value="da">Danish</option>
+            <option value="sv">Swedish</option>
+            <option value="pl">Polish</option>
+            <option value="ru">Russian</option>
+            <option value="el">Greek</option>
+            <option value="ja">Japanese</option>
+            <option value="is">Icelandic</option>
+          </select>
+          <input
+            type="submit"
+            class="btn btn-light translate-btn border"
+            value="Translate"
+          />
+        </div>
+        <div class="translation-sample">
+          &emsp;&emsp;The days became weeks and the weeks became months. Then,
+          on a rainy November day, Hans looked outside the window of his bedroom
+          with a deep sense of nostalgia. Suddenly, almost out of thin air,
+          Astrid appeared on the street. His heart skipped one beat.<br />
+          &emsp;&emsp;<span class="highlighted-text"
+            >"<i><span id="translated-text"></span></i>"</span
+          >, he exclaimed.<br />
+          &emsp;&emsp;The love of his life had come back.
+        </div>
+      </div>
+      <h3>The best way to give your story a foreign feeling</h3>
+      <p>
+        Integrate foreign languages into your story and throw your readers into
+        brand new scenarios, where characters can be just themselves and use
+        their own language. The result will be even more authentic!
+      </p>
+      <div data-aos="flip-up" class="mb-5">
+        <img
+          src="/images/Foreign chapter.png"
+          class="img-foreign-chapter"
+          alt="chapter with foreign words"
+        />
+      </div>
+      <h3>Is the language that you need not listed?</h3>
+      <p>
+        <strong
+          ><a
+            href="https://community.papyrusauthor.com/"
+            target="_blank"
+            class="contact-us-link"
+            >Contact us</a
+          ></strong
+        >
+        and we'll make it happen!
+      </p>
+    </main>
+    <section class="download-section">
+      <h3>
+        Start writing without borders:<br />
+        get Papyrus Author now!
+      </h3>
+      <button>
+        <a
+          href="https://www.papyrusauthor.com/download/"
+          class="download-link"
+          target="_blank"
+          >DOWNLOAD NOW</a
+        >
+      </button>
+    </section>
+    <footer>
+      <img src="/images/logo_white.png" class="logo" alt="papyrus logo" />
+      <p>© 2023 Papyrus Author, Inc.</p>
+    </footer>
+  </body>
+  <script src="/app.js"></script>
+</html>

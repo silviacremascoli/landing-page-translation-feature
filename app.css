@@ -1,0 +1,266 @@
+:root {
+  --default-font: "Open Sans", sans-serif;
+  --primary-color: #e2ba3c;
+  --secondary-color: #30495a;
+  --tertiary-color: #191919;
+}
+
+body {
+  font-family: var(--default-font);
+  margin: 10px 0 auto;
+  color: var(--secondary-color);
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--secondary-color);
+  line-height: 1.5;
+}
+
+h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 100;
+  margin: 20px 200px;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 36px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+nav {
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.nav-container {
+  margin: 10px 200px;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+nav button,
+.download-section button {
+  margin: 10px;
+  padding: 10px 25px 10px 25px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: rgba(226, 186, 60, 0.4) 0px 7px 29px 0px;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.img-translation-feature,
+.img-foreign-chapter {
+  display: block;
+  margin: 50px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: rgba(226, 186, 60, 0.2) 0px 7px 29px 0px;
+}
+
+main {
+  margin: 80px 150px;
+}
+
+main p {
+  line-height: 1.8;
+  padding-right: 30px;
+  font-size: 18px;
+}
+
+.translation-form {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  width: 50%;
+}
+
+.translation-form input,
+.translation-form select {
+  margin-right: 10px;
+}
+
+.translation-feature {
+  padding: 20px;
+  background-color: #f2efe8;
+  border-radius: 8px;
+  box-shadow: rgba(226, 186, 60, 0.2) 0px 7px 29px 0px;
+}
+
+.translation-sample {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.8;
+  text-align: left;
+  margin: 20px auto;
+  padding: 30px 60px;
+  width: 90%;
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  background-color: white;
+}
+
+.highlighted-text {
+  background-color: yellow;
+}
+.contact-us-link {
+  color: var(--secondary-color);
+}
+
+.download-section {
+  background-color: #9b2363;
+  padding: 30px;
+  text-align: center;
+}
+.download-section h3 {
+  color: white;
+  margin: 30px 0 40px 0;
+}
+
+footer {
+  background-color: var(--tertiary-color);
+  padding: 30px;
+}
+
+footer img {
+  display: block;
+  margin: 0 auto;
+}
+
+footer p {
+  color: white;
+  margin: 10px 0 0 10px;
+  font-size: 13px;
+  font-weight: 200;
+  opacity: 0.5;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .logo {
+    max-width: 130px;
+  }
+
+  .nav-container {
+    margin: 10px 50px;
+  }
+  h2 {
+    font-size: 22px;
+    margin: 20px 50px;
+  }
+  h3,
+  h4 {
+    text-align: center;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  .img-translation-feature {
+    max-width: 600px;
+  }
+  .img-foreign-chapter {
+    max-width: 600px;
+  }
+  main {
+    margin: 80px 50px;
+  }
+  main p {
+    text-align: center;
+  }
+  .translation-feature {
+    padding: 20px;
+    margin: 15px 0 0 0;
+    text-align: center;
+  }
+  .translation-form {
+    width: auto;
+    margin: 20px 50px;
+  }
+  .translation-form input.translate-btn {
+    margin-right: 0;
+  }
+  .translation-sample {
+    padding: 25px;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    max-width: 150px;
+  }
+  .nav-container {
+    margin: 10px 50px;
+  }
+  nav button {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 22px;
+    margin: 20px;
+  }
+  .img-foreign-chapter {
+    max-width: 350px;
+  }
+  .img-translation-feature {
+    max-width: 350px;
+  }
+  main {
+    margin: 80px 20px;
+  }
+  .translation-feature {
+    padding: 10px;
+  }
+  .translation-form {
+    display: block;
+    margin: 0 auto;
+  }
+  .translation-form input {
+    width: 75%;
+    margin: 10px auto;
+  }
+  .translation-form select {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .translation-form .translate-btn {
+    width: 50%;
+    margin-bottom: 5px;
+  }
+  .translation-sample {
+    padding: 20px;
+  }
+  .download-section {
+    padding-top: 10px;
+  }
+  .download-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  footer {
+    display: flex;
+  }
+  footer .logo {
+    max-width: 100px;
+  }
+}
