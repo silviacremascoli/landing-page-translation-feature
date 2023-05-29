@@ -111,6 +111,9 @@ main p {
   border-radius: 8px;
   background-color: white;
 }
+#translated-text:first-letter {
+  text-transform: capitalize;
+}
 
 .highlighted-text {
   background-color: yellow;
