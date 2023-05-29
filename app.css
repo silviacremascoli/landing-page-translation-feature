@@ -120,6 +120,11 @@ main p {
 }
 .contact-us-link {
   color: var(--secondary-color);
+  transition: all 200ms ease-in-out;
+}
+
+.contact-us-link:hover {
+  text-decoration: none;
 }
 
 .download-section {
