@@ -72,12 +72,11 @@ button a {
 }
 
 main {
-  margin: 80px 150px;
+  margin: 80px 200px;
 }
 
 main p {
   line-height: 1.8;
-  padding-right: 30px;
   font-size: 18px;
 }
 
@@ -187,9 +186,6 @@ footer p {
   main {
     margin: 80px 50px;
   }
-  main p {
-    text-align: center;
-  }
   .translation-feature {
     padding: 20px;
     margin: 15px 0 0 0;
@@ -210,13 +206,14 @@ footer p {
 
 @media (max-width: 576px) {
   .logo {
-    max-width: 150px;
+    max-width: 120px;
+    margin-top: 8px;
   }
   .nav-container {
-    margin: 10px 50px;
+    margin: 0 12px;
   }
   nav button {
-    padding: 10px;
+    padding: 15px;
   }
   h1 {
     font-size: 36px;
@@ -225,11 +222,8 @@ footer p {
     font-size: 22px;
     margin: 20px;
   }
-  .img-foreign-chapter {
-    max-width: 350px;
-  }
   .img-translation-feature {
-    max-width: 350px;
+    max-width: 330px;
   }
   main {
     margin: 80px 20px;
@@ -256,6 +250,9 @@ footer p {
   .translation-sample {
     padding: 20px;
   }
+  .img-foreign-chapter {
+    max-width: 320px;
+  }
   .download-section {
     padding-top: 10px;
   }
@@ -263,10 +260,10 @@ footer p {
     font-size: 24px;
     margin-bottom: 20px;
   }
-  footer {
-    display: flex;
-  }
   footer .logo {
     max-width: 100px;
+  }
+  footer p {
+    margin: 10px 0 0 15px;
   }
 }
