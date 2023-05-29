@@ -112,7 +112,7 @@ main p {
   background-color: white;
 }
 #translated-text:first-letter {
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .highlighted-text {
