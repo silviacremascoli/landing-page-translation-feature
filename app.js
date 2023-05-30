@@ -4,7 +4,7 @@ const wordInput = document.querySelector("#search-input");
 const search = document.querySelector(".translate-btn");
 
 wordInput.addEventListener("change", (event) => {
-  let input = event.target.value;
+  const input = event.target.value;
   if (!input) {
     translatedText = "";
   } else {
@@ -13,7 +13,7 @@ wordInput.addEventListener("change", (event) => {
 });
 
 languageSelect.addEventListener("change", (event) => {
-  if (event && event.target.value.length < 12) {
+  if (event) {
     const language = event.target.value;
     return language;
   }
@@ -21,7 +21,7 @@ languageSelect.addEventListener("change", (event) => {
 
 search.addEventListener("click", (event) => {
   event.preventDefault();
-  let text = wordInput.value,
+  const text = wordInput.value,
     translateTo = languageSelect.value;
   if (!text) return;
   let apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=en|${translateTo}`;
@@ -33,4 +33,4 @@ search.addEventListener("click", (event) => {
     .catch((error) => console.log(error.toJSON()));
 });
 
-AOS.init({ duration: 1500 });
+AOS.init({ duration: 1400 });
